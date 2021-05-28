@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Press+Start+2P&display=swap');
+body{
+    background-color: white;
+}
+#vista-cero{
+    text-align: center;
+    margin: 100px 10px 0px 10px;
+}
+#primera-vista-psy{
+    display: none;
+    text-align: center;
+    margin-top: 150px;
+}
+#segunda-vista-psy{
+    display: none;
+    text-align: center;
+    margin-top : 100px;
+}
+#tercera-vista-psy{
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+#cuarta-vista-psy{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+}
+#primera-vista-pik{
+    display: none;
+    text-align: center;
+    margin-top: 150px;
+}
+#segunda-vista-pik{
+    display: none;
+    text-align: center;
+    margin-top : 100px;
+}
+#tercera-vista-pik{
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+#cuarta-vista-pik{
+    display: none;
+    text-align: center;
+    margin-top: 100px; 
+}
+#primera-vista-eev{
+    display: none;
+    text-align: center;
+    margin-top: 150px;
+}
+#segunda-vista-eev{
+    display: none;
+    text-align: center;
+    margin-top : 100px;
+}
+#tercera-vista-eev{
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+#cuarta-vista-eev{
+    display: none;
+    text-align: center;
+    margin-top: 100px;
+}
+
+ h2{
+    color: #ff6464;
+    border-color: whitesmoke;
+    font-family: "Press Start 2P";
+}
+p{
+    color: #28527a;
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    font-style: bold;
+    
+}
+main .main-titulo{
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    color: #ff6464;
+    border-color: whitesmoke;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+}
+
+main .main-mensaje input{
+    width: 600px;
+    height: 230px;
+    background: yellow;
+}
+.btn {
+    margin: 20px;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: yellow;
+    font-family: "Press Start 2P";
+}
+
+main .main-traductor img {
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+}
+main .main-traductor h2{
+    color: #ff6464;
+    border-color: whitesmoke;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+}
+.main-cifrado{
+    display:inline-block
+}
+main .main-cifrado img{
+    width: 230px;
+    height: 180px;
+    border-radius:200px;
+}
+.mnsj-cifrado{
+    margin: 50px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+}
+.mnsj-cifrado-pik{
+    margin: 50px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+}
+.mnsj-cifrado-eev{
+    margin: 50px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+}
+.mnsj-original{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+
+}
+.mnsj-original-pik{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+}
+.mnsj-original-eev{
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-style: solid;
+    border-color: red;
+}

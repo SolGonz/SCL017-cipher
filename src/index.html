@@ -2,13 +2,156 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Traductor Pokemon</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+    <div id="vista-cero">
+      <h2>!Algunos Pokemon cumplen años hoy!</h2>
+      <p>Elige a Psyduck, Pikachu o Eevee para enviar un mensaje</p>
+      <button class="btn" onclick="pantallaPsyduck()">Psyduck</button>
+      <button class="btn" onclick="pantallaPikachu()">Pikachu</button>
+      <button class="btn" onclick="pantallaEevee()">Eevee</button>
+  </div>
+  <main id="primera-vista-psy"> 
+    <!-- titulo -->
+    <section class="main-titulo">  
+        <h2>¡Felicidades Psyduck!</h2>
+    </section>
+    <!-- Aquí aparece cajita para mensaje -->
+    <section class="main-mensaje">
+        <p>Escribe en el cuadro el mensaje que le quieres enviar</p>
+        <input type="text" id="mensaje"></input>
+    </section>
+    <!-- Boton enviar mensaje -->
+    <section>
+        <button class="btn" onclick="enviarMensaje()"> Envia tu mensaje</button>
+    </section>
+ </main>
+ <main id="segunda-vista-psy">
+    <!-- Aquí aparece Psyduck confundido y boton traducir -->
+    <section class="main-traductor">
+        <h2>Ups, Psyduck no entiende tu idioma...</h2>
+        <img src="psyduck1.gif">
+        <p>Presiona el botón para traducir a idioma Psyduck</p>
+    </section>
+    <section>
+        <button class="btn" onclick="traducirMensaje()" id="btn-traducir">Traducir a idioma Psyduck</button> 
+    </section>
+ </main>
+ <!-- Aquí aparece el mensaje cifrado a idioma Psyduck -->
+ <main id="tercera-vista-psy">
+     <section class="main-cifrado">
+         <p class="mnsj-cifrado"></p>
+         <img src="psyduck2.gif">
+     </section>
+     <section>
+        <button class="btn" onclick="mensajeOriginal()">Ver mensaje en tu idioma</button> 
+     </section>
+ </main>
+ <!-- Aquí aparece el mensaje original enviado -->
+ <main id="cuarta-vista-psy">
+     <h2>Tu mensaje</h2>
+     <section>
+        <p class="mnsj-original"></p>
+     </section>
+     <section>
+         <button class="btn" onclick="inicioPsy()">Volver al incio</button>
+     </section>
+ </main>
+ <main id="primera-vista-pik"> 
+  <!-- titulo -->
+  <section class="main-titulo">  
+      <h2>¡Felicidades Pikachu!</h2>
+  </section>
+  <!-- Aquí aparece cajita para mensaje -->
+  <section class="main-mensaje">
+      <p>Escribe en el cuadro el mensaje que le quieres enviar</p>
+      <input type="text" id="mensaje-pik"></input>
+  </section>
+  <!-- Boton enviar mensaje -->
+  <section>
+      <button class="btn" onclick="enviarMensajePik()"> Envia tu mensaje</button>
+  </section>
+</main>
+<main id="segunda-vista-pik">
+  <!-- Aquí aparece confundido y boton traducir -->
+  <section class="main-traductor">
+      <h2>Ups, Pikachu no entiende tu idioma...</h2>
+      <img src="pikachu.gif">
+      <p>Presiona el botón para traducir a idioma Pikachu</p>
+  </section>
+  <section>
+      <button class="btn" onclick="traducirMensajePik()" id="btn-traducir">Traducir a idioma Pikachu</button> 
+  </section>
+</main>
+<!-- Aquí aparece el mensaje cifrado a idioma Pikachu -->
+<main id="tercera-vista-pik">
+   <section class="main-cifrado">
+      <p class="mnsj-cifrado-pik"></p>
+      <img src="pikachu2.gif">
+   </section>
+   <section>
+      <button class="btn" onclick="mensajeOriginalPik()">Ver mensaje en tu idioma</button> 
+   </section>
+</main>
+<!-- Aquí aparece el mensaje original enviado -->
+<main id="cuarta-vista-pik">
+   <h2>Tu mensaje</h2>
+   <section>
+      <p class="mnsj-original-pik"></p>
+   </section>
+   <section>
+       <button class="btn" onclick="inicioPik()">Volver al incio</button>
+   </section>
+</main>
+<main id="primera-vista-eev"> 
+  <!-- titulo -->
+  <section class="main-titulo">  
+      <h2>¡Felicidades Eevee!</h2>
+  </section>
+  <!-- Aquí aparece cajita para mensaje -->
+  <section class="main-mensaje">
+      <p>Escribe en el cuadro el mensaje que le quieres enviar</p>
+      <input type="text" id="mensaje-eev"></input>
+  </section>
+  <!-- Boton enviar mensaje -->
+  <section>
+      <button class="btn" onclick="enviarMensajeEev()"> Envia tu mensaje</button>
+  </section>
+</main>
+<main id="segunda-vista-eev">
+  <!-- Aquí aparece confundido y boton traducir -->
+  <section class="main-traductor">
+      <h2>Ups, Eevee no entiende tu idioma...</h2>
+      <img src="eevee1.gif">
+      <p>Presiona el botón para traducir a idioma Eevee</p>
+  </section>
+  <section>
+      <button class="btn" onclick="traducirMensajeEev()" id="btn-traducir">Traducir a idioma Eevee</button> 
+  </section>
+</main>
+<!-- Aquí aparece el mensaje cifrado a idioma Eevee -->
+<main id="tercera-vista-eev">
+   <section class="main-cifrado">
+       <p class="mnsj-cifrado-eev"></p>
+       <img src="eevee2.gif">
+   </section>
+   <section>
+      <button class="btn" onclick="mensajeOriginalEev()">Ver mensaje en tu idioma</button> 
+   </section>
+</main>
+<!-- Aquí aparece el mensaje original enviado -->
+<main id="cuarta-vista-eev">
+   <h2>Tu mensaje</h2>
+   <section>
+      <p class="mnsj-original-eev"></p>
+   </section>
+   <section>
+       <button class="btn" onclick="inicioEev()">Volver al incio</button>
+   </section>
+</main>
+    <script src="index.js"></script>
+    <script src="cipher.js"></script>
   </body>
 </html>
