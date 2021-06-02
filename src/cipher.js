@@ -31,4 +31,4 @@ decode: (nDec, stringDec) =>{
   }
 };
 
-// export default cipher;
+export default cipher;
