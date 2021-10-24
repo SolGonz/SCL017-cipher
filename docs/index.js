@@ -15,7 +15,7 @@ document.getElementById("traducirMensaje").addEventListener("click", traducirMen
     document.getElementById("segunda-vista-psy").style.display = "none";
     document.getElementById("tercera-vista-psy").style.display = "block";
     let mensajeEnviado = document.getElementById("mensaje").value;
-    document.querySelector(".mnsj-cifrado").innerHTML =  cipher.encode(3, mensajeEnviado);
+    document.querySelector("mnsj-cifrado").innerHTML =  cipher.encode(66, mensajeEnviado);
   }
 document.getElementById("mensajeOriginal").addEventListener("click", mensajeOriginal);
   function mensajeOriginal(){
